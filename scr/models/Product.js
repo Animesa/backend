@@ -1,7 +1,6 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../config/dababase.js";
 import Category from "./Category.js";
-import Movement from "./Movement.js";
 
 
 const Product = sequelize.define('product', {
@@ -25,6 +24,5 @@ const Product = sequelize.define('product', {
 });
 
 Product.belongsTo(Category, { foreignKey: 'categoryId', onDelete: 'CASCADE' });
-Product.hasMany(Movement, { foreignKey: 'productId' })
 
 export default Product;

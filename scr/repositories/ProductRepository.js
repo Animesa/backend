@@ -1,4 +1,3 @@
-import sequelize from "../config/dababase.js";
 import Category from "../models/Category.js";
 import Product from "../models/Product.js";
 

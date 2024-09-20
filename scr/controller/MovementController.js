@@ -1,7 +1,7 @@
 import Response from "../models/response.js";
 import { MovementService } from "../services/MovementService.js";
 import { ERROR_MESSAGE } from "../utils/globals.js";
-import { CREATED, INTERNALSERVERERROR, NOTFOUND, OK } from "../utils/statusCodes.js";
+import { BADREQUEST, CREATED, INTERNALSERVERERROR, NOTFOUND, OK } from "../utils/statusCodes.js";
 
 
 const movementService = new MovementService();
@@ -52,14 +52,12 @@ export const addMovement = async (req, res) => {
 
 export const addMassive = async (req, res) => {
     const { user: { id: userId } } = req;
-    console.log(req.body);
 
     if (!Array.isArray(req.body)) {
-        return res.status(BAD_REQUEST).json(new Response({ success: false, message: 'El cuerpo de la solicitud debe ser un array.' }));
+        return res.status(BADREQUEST).json(new Response({ success: false, message: 'El cuerpo de la solicitud debe ser un array.' }));
     }
 
     const data = req.body.map(item => ({ ...item, userId }));
-    console.log(data);
 
     await movementService.addMassive(data).then((response) => {
         res.status(CREATED).json(new Response({ data: response }));

@@ -1,6 +1,5 @@
 import { DataTypes } from "sequelize";
 import sequelize from "../config/dababase.js";
-import Product from "./Product.js";
 import Users from "./Users.js"
 
 const Movement = sequelize.define('movement', {
@@ -40,7 +39,6 @@ const Movement = sequelize.define('movement', {
     timestamps: false
 });
 
-// Movement.belongsTo(Product, { foreignKey: 'productId' });
 Movement.belongsTo(Users, { foreignKey: 'userId' });
 
 export default Movement;

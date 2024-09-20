@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node scr/index.js",
     "dev": "nodemon scr/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "Andres Mesa",
   "license": "ISC",
@@ -22,7 +22,10 @@
     "xss-clean": "^0.1.4"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "@babel/register": "^7.24.6",
     "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.5"
   }
 }
