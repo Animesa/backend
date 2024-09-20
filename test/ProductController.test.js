@@ -1,9 +1,9 @@
-import { getAll, getProduct, addProduct, updateProduct } from '../scr/controller/ProductController.js';
-import { ProductService } from '../scr/services/ProductService.js';
-import Response from '../scr/models/response.js';
-import { BADREQUEST, CREATED, INTERNALSERVERERROR, NOTFOUND, OK } from '../scr/utils/statusCodes.js';
+import { getAll, getProduct, addProduct, updateProduct } from '../src/controller/ProductController.js';
+import { ProductService } from '../src/services/ProductService.js';
+import Response from '../src/models/response.js';
+import { BADREQUEST, CREATED, INTERNALSERVERERROR, NOTFOUND, OK } from '../src/utils/statusCodes.js';
 
-jest.mock('../scr/services/ProductService.js');
+jest.mock('../src/services/ProductService.js');
 
 describe('ProductController', () => {
     let req, res;

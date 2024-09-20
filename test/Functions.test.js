@@ -1,5 +1,5 @@
 import bcrypt from 'bcryptjs';
-import { encrypt, compare, validateFormatter } from '../scr/utils/functions.js';
+import { encrypt, compare, validateFormatter } from '../src/utils/functions.js';
 
 jest.mock('bcryptjs');
 

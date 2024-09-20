@@ -1,16 +1,16 @@
-import { MovementRepository } from '../scr/repositories/MovementRepository.js';
-import sequelize from '../scr/config/dababase.js';
-import Movement from '../scr/models/Movement.js';
+import { MovementRepository } from '../src/repositories/MovementRepository.js';
+import sequelize from '../src/config/dababase.js';
+import Movement from '../src/models/Movement.js';
 
-jest.mock('../scr/models/Movement.js', () => ({
+jest.mock('../src/models/Movement.js', () => ({
     belongsTo: jest.fn(),
     findAll: jest.fn(),
     create: jest.fn(),
     bulkCreate: jest.fn()
 }));
-jest.mock('../scr/models/Product.js');
+jest.mock('../src/models/Product.js');
 
-jest.mock('../scr/config/dababase.js', () => ({
+jest.mock('../src/config/dababase.js', () => ({
     query: jest.fn(),
     define: jest.fn()
 }));

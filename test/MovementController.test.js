@@ -1,9 +1,9 @@
-import Response from "../scr/models/response.js";
-import { MovementService } from "../scr/services/MovementService.js";
-import { getInventory, getMovement, addMovement, addMassive } from '../scr/controller/MovementController.js';
-import { NOTFOUND, OK, CREATED, INTERNALSERVERERROR, BAD_REQUEST, BADREQUEST } from '../scr/utils/statusCodes.js';
+import Response from "../src/models/response.js";
+import { MovementService } from "../src/services/MovementService.js";
+import { getInventory, getMovement, addMovement, addMassive } from '../src/controller/MovementController.js';
+import { NOTFOUND, OK, CREATED, INTERNALSERVERERROR, BAD_REQUEST, BADREQUEST } from '../src/utils/statusCodes.js';
 
-jest.mock('../scr/services/MovementService.js');
+jest.mock('../src/services/MovementService.js');
 
 describe('Movement Controller', () => {
     let req, res;

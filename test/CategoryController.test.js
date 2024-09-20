@@ -1,9 +1,9 @@
-import { getCategories, addCategory } from '../scr/controller/CategoryController.js';
-import { CategoryService } from '../scr/services/CategoryService.js';
-import Response from '../scr/models/response.js';
-import { OK, NOTFOUND, INTERNALSERVERERROR } from '../scr/utils/statusCodes.js';
+import { getCategories, addCategory } from '../src/controller/CategoryController.js';
+import { CategoryService } from '../src/services/CategoryService.js';
+import Response from '../src/models/response.js';
+import { OK, NOTFOUND, INTERNALSERVERERROR } from '../src/utils/statusCodes.js';
 
-jest.mock('../scr/services/CategoryService.js');
+jest.mock('../src/services/CategoryService.js');
 
 describe('CategoryController', () => {
     let req, res;

@@ -1,11 +1,11 @@
-import { UserService } from '../scr/services/UserService.js';
-import { UserRepository } from '../scr/repositories/UserRepository.js';
-import { generateToken } from '../scr/middleware/auth.js';
-import { compare, encrypt } from '../scr/utils/functions.js';
+import { UserService } from '../src/services/UserService.js';
+import { UserRepository } from '../src/repositories/UserRepository.js';
+import { generateToken } from '../src/middleware/auth.js';
+import { compare, encrypt } from '../src/utils/functions.js';
 
-jest.mock('../scr/repositories/UserRepository.js');
-jest.mock('../scr/utils/functions.js');
-jest.mock('../scr/middleware/auth.js');
+jest.mock('../src/repositories/UserRepository.js');
+jest.mock('../src/utils/functions.js');
+jest.mock('../src/middleware/auth.js');
 
 describe('UserService', () => {
     let userService;

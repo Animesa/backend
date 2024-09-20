@@ -1,9 +1,9 @@
-import { getUser, addUser } from '../scr/controller/UserController.js';
-import { UserService } from '../scr/services/UserService.js';
-import Response from '../scr/models/response.js';
-import { INTERNALSERVERERROR, NOTFOUND, OK } from '../scr/utils/statusCodes.js';
+import { getUser, addUser } from '../src/controller/UserController.js';
+import { UserService } from '../src/services/UserService.js';
+import Response from '../src/models/response.js';
+import { INTERNALSERVERERROR, NOTFOUND, OK } from '../src/utils/statusCodes.js';
 
-jest.mock('../scr/services/UserService.js');
+jest.mock('../src/services/UserService.js');
 
 describe('UserController', () => {
     let req, res;

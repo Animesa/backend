@@ -2,11 +2,11 @@
   "name": "inventa_api",
   "version": "1.0.0",
   "description": "API Inventarios",
-  "main": "./scr/index.js",
+  "main": "./src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node scr/index.js",
-    "dev": "nodemon scr/index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "jest --coverage"
   },
   "author": "Andres Mesa",

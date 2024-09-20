@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
-import authMiddleware, { generateToken } from '../scr/middleware/auth.js';
-import Response from '../scr/models/response.js';
-import { UNAUTHORIZED, BADREQUEST } from '../scr/utils/statusCodes.js';
+import authMiddleware, { generateToken } from '../src/middleware/auth.js';
+import Response from '../src/models/response.js';
+import { UNAUTHORIZED, BADREQUEST } from '../src/utils/statusCodes.js';
 
 jest.mock('jsonwebtoken');
 

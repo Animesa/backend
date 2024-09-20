@@ -1,7 +1,7 @@
-import { MovementService } from '../scr/services/MovementService.js';
-import { MovementRepository } from '../scr/repositories/MovementRepository.js';
+import { MovementService } from '../src/services/MovementService.js';
+import { MovementRepository } from '../src/repositories/MovementRepository.js';
 
-jest.mock('../scr/repositories/MovementRepository.js');
+jest.mock('../src/repositories/MovementRepository.js');
 
 describe('MovementService', () => {
     let movementService;

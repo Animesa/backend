@@ -1,7 +1,7 @@
-import { UserRepository } from '../scr/repositories/UserRepository.js';
-import Users from '../scr/models/Users.js';
+import { UserRepository } from '../src/repositories/UserRepository.js';
+import Users from '../src/models/Users.js';
 
-jest.mock('../scr/models/Users.js');
+jest.mock('../src/models/Users.js');
 
 describe('UserRepository', () => {
     let userRepository;

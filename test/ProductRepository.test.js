@@ -1,8 +1,8 @@
-import { ProductRepository } from '../scr/repositories/ProductRepository.js';
-import Category from '../scr/models/Category.js';
-import Product from '../scr/models/Product.js';
+import { ProductRepository } from '../src/repositories/ProductRepository.js';
+import Category from '../src/models/Category.js';
+import Product from '../src/models/Product.js';
 
-jest.mock('../scr/models/Product.js');
+jest.mock('../src/models/Product.js');
 
 describe('ProductRepository', () => {
     let productRepository;

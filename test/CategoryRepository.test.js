@@ -1,7 +1,7 @@
-import { CategoryRepository } from '../scr/repositories/CategoryRepository.js';
-import Category from '../scr/models/Category.js';
+import { CategoryRepository } from '../src/repositories/CategoryRepository.js';
+import Category from '../src/models/Category.js';
 
-jest.mock('../scr/models/Category.js');
+jest.mock('../src/models/Category.js');
 
 
 describe('CategoryRepository', () => {
