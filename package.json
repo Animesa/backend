@@ -1,0 +1,28 @@
+{
+  "name": "inventa_api",
+  "version": "1.0.0",
+  "description": "API Inventarios",
+  "main": "./scr/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scr/index.js",
+    "dev": "nodemon scr/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres Mesa",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.0",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.3",
+    "serverless-http": "^3.2.0",
+    "sqlite3": "^5.1.7",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.5"
+  }
+}
